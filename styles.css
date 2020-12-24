@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+
+input {
+    margin: .25rem;
+}
+
+.input {
+    border:1px solid #b2b2b2;
+    border-radius: .2em;
+    outline: none;
+    padding: .5em;
+    font-size: inherit;
+}
+
+.input:focus, .input:hover {
+    border-color: hsl(180, 100%, 30%);
+    box-shadow: 0 0 5px 0 hsl(180, 100%, 50%);
+}
+
+.input.input-large {
+    font-size: 1.25rem;
+}
+
+.input.input-small{
+    font-size: .5rem;
+}
+
+.input.input-error {
+    border-color:  hsl(356, 66%, 68%) ;
+}
+.input.input-error:focus, .input.input-error:hover {
+    border-color: hsl(356, 66%, 78%);
+    box-shadow: 0 0 5px 0 hsl(356, 66%, 58%);
+}
+
+.input.input-success {
+    border-color: hsl(102, 60%, 67%);
+}
+
+.input.input-success:focus, .input.input-success:hover {
+    border-color: hsl(102, 60%, 77%);
+    box-shadow: 0 0 5px 0 hsl(102, 60%, 57%);
+}
+
+.input.input-disabled {
+    border-color:  #b2b2b2;
+    background-color: #eaeaea;
+
+}
+
+.input.input-disabled:focus, .input.input-disabled:hover {
+    border-color: #b2b2b2;
+    box-shadow: none;
+}
